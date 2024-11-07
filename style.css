@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap');
+
+:root{
+     --main-color:#d3ad7f;
+     --black:#13131a;
+     --bg:#010103;
+     --border: 0.2rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+ 
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+
+}
+.heading span{
+color:var(--main-color);
+text-transform: uppercase;
+}
+
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+ 
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+
+}
+
+/*logo
+*/
+
+ .navbar a{
+
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+
+.navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+
+
+.icons{
+    display: flex;
+}
+
+.icons div{
+cursor:pointer;
+margin-left: 2rem;
+
+}
+
+
+.bars img{ 
+    margin-top: 0.2cm;
+    max-width:30px;
+    height: auto;
+    display: none;
+}
+
+.instalogooo {
+    padding-top: 25%;
+    width: 35px;
+    height: auto;
+    border-radius: 0; /* Ensures no circular rounding */
+}
+
+.instagramlinkkk {
+    text-decoration: none;
+}
+
+.instalogooo:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.home {
+    width:100%;
+    height: 140vh; 
+    background: url(Photos/Picsart_24-10-06_00-56-13-989.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: center -100px;
+    background-size: cover; 
+}
+
+.home .content {
+    margin-top: -3cm;
+    text-align: center;
+    color:white;
+    z-index: 1;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url()no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+
+/* .content{
+    max-width: 60rem;
+} */
+.content h1{
+font-size: 6rem;
+color:white;
+text-transform: uppercase;
+}
+.content p{
+font-size: 2rem;
+font-weight: lighter;
+padding: 1rem 0;
+line-height: 1.8 ;
+color:white;
+
+}
+
+.home{
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+}
+.content h1{
+    font-size: 4.5rem;
+}
+.content p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+.row1{
+      margin-left: -0.5cm;
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+.image1 img{
+   max-width: 500px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+                      /* flex: 1 1 45rem; */
+}
+
+.content1{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.content1 h3{
+font-size: 3rem;
+color: #fff;
+
+}
+.content1 p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-transform: none;
+    }
+
+
+
+
+
+
+
+
+.boxcontainer{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(40rem,1fr));
+    gap: 1.5rem;
+}
+
+.box{
+    padding: 3rem;
+    text-align: center;
+     border:0.01rem solid rgba(255,255,255,.3)
+}
+.box img{
+
+    height: 12rem;
+}
+
+
+.box h3{
+
+color: #7a7a7a;
+font-size: 2rem;
+padding: 1rem.0;
+
+}
+
+.box:hover{
+    background-color:rgb(39, 39, 39); /* highlighting part */
+
+}
+
+
+.boxcontainer2{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(50rem,1rem)); /* to adjust the grid size of services*/
+    gap: 2rem;
+    row-gap: 3cm;
+   
+}
+
+.box2{     /* Changes for the box in services*/
+   
+ 
+    margin-left: 5cm;
+    padding: 3rem;
+    text-align: center;
+    /*border:0.01rem solid rgba(255,255,255,.3); /* to remove the border of service grid*/
+    
+
+
+    writing-mode : horizontal-tb; /* or vertical-lr */
+    text-orientation: upright; /* keeps the text upright */
+    height: 400px; /* adjust as needed */
+    width: 45rem;
+
+
+
+}
+.box2 h1{
+
+    
+    color: #7a7a7a;
+    font-size: 3rem;
+    padding: 1rem.0;
+    
+}
+
+.box2 p{
+    color: #7a7a7a;
+    font-size: 1.5rem;
+    padding: 1rem.0;
+    line-height: 1.8;
+    text-transform: none;
+}
+
+
+
+/* .boxcontainer3{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(40rem,1fr));
+    gap: 1.5rem;
+}
+
+.box3{
+    padding: 3rem;
+    text-align: center;
+     border:0.01rem solid rgba(255,255,255,.3)
+}
+
+/* 
+.box3 h3{
+
+    
+    color:#fff;
+    font-size: 3rem;
+    padding: 1rem.0;
+    
+}
+.box3 p{
+    color: #ccc;
+    font-size: 1.5rem;
+    padding: 1rem.0;
+    line-height: 1.8;
+    text-transform: none;
+} */
+ 
+
+
+.boxcontainer3{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(40rem,1fr));
+    gap: 1.5rem;
+}
+
+.box3{
+    padding: 3rem;
+    text-align: center;
+    /* border:0.01rem solid rgba(255,255,255,.3)*/
+}
+
+
+.box3 h3{
+
+    
+    color: #7a7a7a; /*color:#a59385 */
+    font-size: 3rem;
+    padding: 1rem.0;
+    
+}
+.box3 p{
+   color: #666; /* color:#a59385; */
+    font-size: 1.5rem;
+    padding: 1rem.0;
+    line-height: 1.8;
+    text-transform:none;
+}
+.box3 a{
+text-transform: lowercase;
+
+}
+
+
+
+
+
+
+
+
+.footer{
+    background: var(--black);
+    text-align: center;
+}
+
+.share{
+
+    padding: 1rem 0;
+}
+
+/*.share a{
+
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: 3rem;
+    border-radius: 50rem;
+
+}
+
+.share a:hover{
+
+    color: var(--main-color);
+}
+*/
+
+
+
+.instalogo {
+    width: 50px;
+    height: auto;
+    border-radius: 0; /* Ensures no circular rounding */
+    background: none; /* Removes any background */
+}
+
+.instagramlink {
+    text-decoration: none;
+}
+
+.instalogo:hover {
+    opacity: 0.8;
+    cursor: pointer
+}
+
+
+
+
+
+/*----------------------------------________________________________________________________-------------------------------*/
+
+
+
+/* Initial hidden state for the service boxes */
+.box2 {
+    opacity: 0;
+    transform: translateY(50px); /* Slightly move down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation */
+}
+
+/* When the element becomes visible (with JavaScript) */
+.box2.show {
+    opacity: 1;
+    transform: translateY(0); /* Reset position */
+}
+
+/* Media query to adjust for responsiveness */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .box2{
+        margin-left: 1cm;
+    }
+}
+
+/*_______________________________________________________________________________________________________*/
+  
+.about {
+    margin-top: 40px; /* Adjust the value as needed */
+}
+
+.clients{
+    margin-top: 100px;
+}
+
+
+.services{
+
+     margin-top: 100px; ;
+}
+.contacts{
+    margin-top: 150px;
+}
+
+/*-----------------------_________________________________________________________________----------------------*/
+
+.content h1 {
+    font-size: 4rem; /* Default size for larger screens */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease-in-out forwards;
+  }
+  
+  .content p {
+    font-size: 1.5rem; /* Default size for larger screens */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+
+
+
+
+@media (max-width: 768px) {
+    .content h1 {
+      font-size: 3rem; /* Reduce size on smaller screens */
+    }
+  
+    .content p {
+      font-size: 1.2rem; /* Reduce size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 2.5rem; /* Further reduce size on very small screens */
+    }
+  
+    .content p {
+      font-size: 1rem; /* Further reduce size on very small screens */
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/*----------------------_____________________________________________________________________---------------------*/
+
+
+.boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box {
+    padding: 3rem;
+    text-align: center;
+    border: 0.01rem solid rgba(255, 255, 255, .3);
+    opacity: 0; /* Start as invisible */
+    transform: translateY(20px); /* Start lower */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.box img {
+    height: 12rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px)
+{
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5 rem 2rem;
+    }
+}
+
+
+
+
+@media(max-width:991px)
+{
+
+
+
+    .bars img{
+        width: 50px;
+        height: auto;
+        display: inline-block;
+    }
+
+
+
+
+
+    .navbar{
+position:absolute;
+top: 100%;
+right: -100%;
+background: #fff;
+width: 30rem;
+height :calc(100vh - 9.5rem);
+
+
+    }
+
+.navbar.active{
+
+    right: 0;
+}
+
+
+    .navbar a{
+        color: var(--black);
+       display: block;
+       margin: 1.5rem;
+       padding: .5rem;
+       font-size: 2rem;
+        
+            }
+
+
+
+}
+
+
+
+
+
+
+
+/***********************************Responsive*****************************************************/
+
+
+
+/* General Styles for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    /* Centered headings in services and contacts */
+    .box2 h1, .box3 h3 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .box2 p, .box3 p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    /* Home section adjustments */
+    .home {
+        background-size: cover;  /* Ensures the image covers the area */
+        background-position: center;
+        height: 100vh; /* Adjust height for mobile */
+    }
+
+    .home .content {
+        margin-top: 0; /* Center the content better on smaller screens */
+    }
+
+    /* Adjusting the box layout for products and contacts */
+    .boxcontainer2 {
+        grid-template-columns: 1fr; /* Single column layout for better mobile fit */
+        margin-left: 0;
+    }
+
+    .boxcontainer3 {
+        grid-template-columns: 1fr; /* Single column layout for better mobile fit */
+    }
+
+    .box2, .box3 {
+        margin-left: 0;
+        width: 100%; /* Make boxes full width */
+    }
+
+    .image1 img {
+        width: 100%; /* Ensure images are responsive */
+        height: auto;
+    }
+
+    /* Navbar adjustments */
+    .navbar a {
+        display: block; /* Stack links for mobile */
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 2.5rem; /* Smaller screens, further reduce size */
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+    
+    .heading {
+        font-size: 2.5rem; /* Smaller font for headings */
+    }
+}
